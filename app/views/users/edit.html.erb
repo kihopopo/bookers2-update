@@ -4,7 +4,7 @@
       
 <h2>User info</h2>
     <% if @user.errors.any? %>
-  　<h3><%= @user.errors.count %>error prohibited this obj from being saved:</h3>
+  　<h3><%= @user.errors.count %>　error prohibited this obj from being saved:</h3>
   　<ul>
     <% @user.errors.full_messages.each do |message| %>
       <li><%= message %></li>
@@ -22,7 +22,7 @@
  </div>
  <div class="form-group">
  <label for="user_Introduction">Introduction</label>
-  <%= f.text_area :self_introduction, class:"form-control introduction", autofocus: true, id:"user_introduction"%>
+  <%= f.text_area :introduction, class:"form-control introduction", autofocus: true, id:"user_introduction"%>
  </div>
  <div>
  <%= f.submit "Update User",class:"btn btn-secondary" %>
